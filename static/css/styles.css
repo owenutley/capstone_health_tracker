@@ -1,0 +1,108 @@
+::selection {
+    background:rgb(98, 206, 233);
+    color:rgb(21, 75, 0)
+}
+
+body {
+    text-align: center;
+    background-color: rgb(40, 60, 160);
+    /* border: 5px white solid; */
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-a:link {
+    color: black;
+}
+
+.nav-a:visited {
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    Justify-content: space-around;
+    background-color: white;
+    border: 5px rgb(40, 60, 160) solid;
+    border-radius: 15px;
+}
+
+.weekdays {
+    margin-left: 0px;
+    display:flex;
+    justify-content: left;
+    background-color: rgb(40, 60, 160);
+    font-size: 30px;
+    padding-left: 0px;
+    z-index: -1;
+    position: relative;
+    margin-left: 5%;
+}
+
+.week-day {
+    display: inline-block;
+    width: 13.5%;
+    color: white;
+    background-color: rgb(40, 60, 160);
+    text-align: center;
+    /* margin: auto; */
+}
+
+.fixed {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: -1;
+}
+
+
+.month {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 5%;
+}
+
+.days {
+    display: inline-block;
+    color: white;
+    height: 60px;
+    width: 13.5%;
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(40, 60, 160);
+    z-index: -2;
+    /* margin: auto; */
+}
+
+.empty-days {
+    color: white;
+    height: 60px;
+    width: 13.5%;
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    /* margin: auto; */
+}
+
+#month-list h2 {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: -3;
+}
+
+.other {
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    /* text-align: center; */
+}
