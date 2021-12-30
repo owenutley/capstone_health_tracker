@@ -5,7 +5,7 @@
 
 body {
     text-align: center;
-    background-color: rgb(40, 60, 160);
+    background-color: rgb(18, 42, 160);
     /* border: 5px white solid; */
 }
 
@@ -34,7 +34,7 @@ li {
     margin-left: 0px;
     display:flex;
     justify-content: left;
-    background-color: rgb(40, 60, 160);
+    background-color: rgb(18, 42, 160);
     font-size: 30px;
     padding-left: 0px;
     z-index: -1;
@@ -46,7 +46,7 @@ li {
     display: inline-block;
     width: 13.5%;
     color: white;
-    background-color: rgb(40, 60, 160);
+    background-color: rgb(18, 42, 160);
     text-align: center;
     /* margin: auto; */
 }
@@ -60,7 +60,10 @@ li {
 }
 
 
-.month {
+.month_jan, .month_feb, .month_mar, 
+.month_apr, .month_may, .month_jun, 
+.month_jul, .month_aug, .month_sep, 
+.month_oct, .month_nov, .month_dec {
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +71,7 @@ li {
     margin-left: 5%;
 }
 
-.days {
+.jan, .feb, .mar, .apr, .may, .jun, .jul, .aug, .sep, .oct, .nov, .dec {
     display: inline-block;
     color: white;
     height: 60px;
@@ -76,7 +79,7 @@ li {
     list-style-type: none;
     font-size: 30px;
     text-align: center;
-    background-color: rgb(40, 60, 160);
+    background-color: rgb(18, 42, 160);
     z-index: -2;
     /* margin: auto; */
 }
@@ -106,3 +109,11 @@ h1 {
     color: white;
     /* text-align: center; */
 }
+
+/* #jan_1 {
+    color: blue;
+}
+
+#jan_2 {
+    color: green;
+} */

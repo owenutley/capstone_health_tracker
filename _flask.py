@@ -8,13 +8,13 @@ app = Flask(__name__)
 def main():
     return render_template('home.html')
     
-@app.route("/entry_view")
-def other():
-    return render_template('entry_view.html')
+@app.route("/entry")
+def entry():
+    return render_template('entry.html')
 
-@app.route("/hello")
-def hello():
-    return 'Hello, World!'
+@app.route("/_entry")
+def edit_entry():
+    return render_template('_entry.html')
 
 
 if __name__ == "__main__":
