@@ -84,6 +84,12 @@ li {
     /* margin: auto; */
 }
 
+.jan:hover, .feb:hover, .mar:hover, .apr:hover, 
+.may:hover, .jun:hover, .jul:hover, .aug:hover, 
+.sep:hover, .oct:hover, .nov:hover, .dec:hover {
+    cursor: pointer;
+}
+
 .empty-days {
     color: white;
     height: 60px;
@@ -117,3 +123,7 @@ h1 {
 #jan_2 {
     color: green;
 } */
+
+#entry_field {
+    background-color: White;
+}
