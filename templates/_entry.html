@@ -6,18 +6,38 @@
 
 {% block content %}
 <header><h1> Date </h1></header>
-<form id="entry_field">
+<form id="entry_field" method="POST">
     <div>
-        <label for="fname">How you feel today</label><br>
-        <input type="text">
+        <label for="fname">Date</label><br>
+        <input type="date">
+    </div>
+    <div>
+        <label for="feel">How did you feel today?</label><br>
+        <textarea type="text" name="feel"></textarea>
     </div>
     <div>
         <label for="fname">First name:</label><br>
-        <input type="text">
+        <input type="text" id="fname" name="fname">
     </div>
     <div>
-        <label for="fname">First name:</label><br>
-        <input type="text">
+        <label for="elevel">Exercise Level</label><br>
+        <div class="radio-entry">
+            <input type="radio" id="low" name="elevel" value="low">
+            <label for="low">low</label><br>
+            <input type="radio" id="moderate" name="elevel" value="moderate">
+            <label for="moderate">moderate</label><br>
+            <input type="radio" id="high" name="elevel" value="high">
+            <label for="high">high</label>
+        </div>
+        <label for="elevel">Sleep quality</label><br>
+        <div class="radio-entry">
+            <input type="radio" id="low" name="slevel" value="low">
+            <label for="low">low</label><br>
+            <input type="radio" id="moderate" name="slevel" value="moderate">
+            <label for="moderate">moderate</label><br>
+            <input type="radio" id="high" name="slevel" value="high">
+            <label for="high">high</label>
+        </div>
     </div>
 </form>
 

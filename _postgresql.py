@@ -1,9 +1,9 @@
 import psycopg2
 
-hostname = 'localhost'
-database = 'health'
-username = 'postgres'
-password = 'MyData'
+hostname = 'ec2-3-212-172-25.compute-1.amazonaws.com'
+database = 'dbipg177vham9q'
+username = 'ayfhllgylxnjov'
+password = 'ec4c8c03775f2c5635ee6ae71b6ab5ce077f0c49f5cb625acf946fb1fd468eb7'
 port_id = 5432
 
 

@@ -1,13 +1,14 @@
 from flask import Flask, render_template
-
+from flask import Flask, flash, redirect, render_template, request, session, abort
+import os
 
 app = Flask(__name__)
 
 
 @app.route("/")
-def main():
-    return render_template('home.html')
-    
+def home():
+    return render_template("home.html")
+
 @app.route("/entry")
 def entry():
     return render_template('entry.html')
