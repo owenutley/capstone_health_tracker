@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 # from flask import Flask, flash, redirect, render_template, request, session, abort
-from app._postgresql import hostname, database, username, password, port_id
+from _postgresql import hostname, database, username, password, port_id
 import psycopg2
 
 app = Flask(__name__)
