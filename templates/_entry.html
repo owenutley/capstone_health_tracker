@@ -8,37 +8,43 @@
 <header><h1> Date </h1></header>
 <form id="entry_field" method="POST">
     <div>
-        <label for="fname">Date</label><br>
-        <input type="date">
+        <label for="date">Date</label><br>
+        <input type="date" name="date">
     </div>
     <div>
-        <label for="feel">How did you feel today?</label><br>
-        <textarea type="text" name="feel"></textarea>
-    </div>
-    <div>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname">
+        <label for="feel">how did you feel today?</label><br>
+        <div class="radio-entry">
+            <input type="radio" id="flow" name="feel" value="1">
+            <label for="flow">not great</label><br>
+            <input type="radio" id="fmoderate" name="feel" value="2">
+            <label for="fmoderate">okay</label><br>
+            <input type="radio" id="fhigh" name="feel" value="3">
+            <label for="fhigh">good</label>
+        </div>
     </div>
     <div>
         <label for="elevel">Exercise Level</label><br>
         <div class="radio-entry">
-            <input type="radio" id="low" name="elevel" value="low">
-            <label for="low">low</label><br>
-            <input type="radio" id="moderate" name="elevel" value="moderate">
-            <label for="moderate">moderate</label><br>
-            <input type="radio" id="high" name="elevel" value="high">
-            <label for="high">high</label>
-        </div>
-        <label for="elevel">Sleep quality</label><br>
-        <div class="radio-entry">
-            <input type="radio" id="low" name="slevel" value="low">
-            <label for="low">low</label><br>
-            <input type="radio" id="moderate" name="slevel" value="moderate">
-            <label for="moderate">moderate</label><br>
-            <input type="radio" id="high" name="slevel" value="high">
-            <label for="high">high</label>
+            <input type="radio" id="elow" name="elevel" value="1">
+            <label for="elow">low</label><br>
+            <input type="radio" id="emoderate" name="elevel" value="2">
+            <label for="emoderate">moderate</label><br>
+            <input type="radio" id="ehigh" name="elevel" value="3">
+            <label for="ehigh">high</label>
         </div>
     </div>
+    <div>
+        <label for="slevel">Sleep quality</label><br>
+        <div class="radio-entry">
+            <input type="radio" id="slow" name="slevel" value="1">
+            <label for="slow">bad</label><br>
+            <input type="radio" id="smoderate" name="slevel" value="2">
+            <label for="smoderate">moderate</label><br>
+            <input type="radio" id="shigh" name="slevel" value="3">
+            <label for="shigh">good</label>
+        </div>
+    </div>
+    <input type="submit" value="Submit">
 </form>
 
 {% endblock %}

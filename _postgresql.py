@@ -11,13 +11,16 @@ conn = psycopg2.connect(dbname=database, user=username, password=password, host=
 
 cur = conn.cursor()
 
-cur.execute('''CREATE TABLE day_exercise
-(day_id INT REFERENCES day(day_id),
-exercise_id INT NOT NULL REFERENCES exercise(exercise_id));
-''')
-
-# cur.execute("INSERT INTO app_user (name, email, password)
-# VALUES ('owen', 'owen@example.com', '123456789')")
+# cur.execute('''CREATE TABLE day(
+# day_id SERIAL PRIMARY KEY,
+# day int NOT NULL,
+# month int NOT NULL,
+# year int NOT NULL,
+# feeling_level INT NOT NULL,
+# exercise_level INT NOT NULL,
+# sleep_quality INT NOT NULL
+# );
+# ''')
 
 # cur.execute("DELETE FROM app_user WHERE user_id = 2;")
 

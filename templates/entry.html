@@ -6,6 +6,25 @@
 
 {% block content %}
 
-
+<div>
+    <h2>{{ month, year }}</h2>
+    <h2>{{ this_month }}</h2>
+</div>
+<div id="chart">
+    <div>
+        <div class="right">3</div>
+        <div class="right">2</div>
+        <div class="right">1</div>
+        <div>description/date</div>
+    </div>
+    <!-- {% for day in this_month %}
+        <div>
+            <div class="inner_chart"> </div>
+            <div class="inner_chart"> </div>
+            <div class="inner_chart"> </div>
+            <div>{{ day + 1 }}</div>
+        </div>
+    {% endfor %} -->
+</div>
 
 {% endblock %}

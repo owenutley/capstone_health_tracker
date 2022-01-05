@@ -1,0 +1,47 @@
+{% extends "frame.html" %}
+
+{% block title %}Entry{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+<div>
+    <form for="smonth" id="summary" method="POST">
+        <labal> What month would you like a summary of?</labal>
+        <div class="radio-entry">
+            <input type="radio" name="smonth" value="01">
+            <label for="month">January</label><br>
+            <input type="radio" name="smonth" value="02">
+            <label for="month">February</label><br>
+            <input type="radio" name="smonth" value="03">
+            <label for="month">March</label><br>
+            <input type="radio" name="smonth" value="04">
+            <label for="month">April</label><br>
+            <input type="radio" name="smonth" value="05">
+            <label for="month">May</label><br>
+            <input type="radio" name="smonth" value="06">
+            <label for="month">June</label><br>
+            <input type="radio" name="smonth" value="07">
+            <label for="month">July</label><br>
+            <input type="radio" name="smonth" value="08">
+            <label for="month">August</label><br>
+            <input type="radio" name="smonth" value="09">
+            <label for="month">September</label><br>
+            <input type="radio" name="smonth" value="10">
+            <label for="month">October</label><br>
+            <input type="radio" name="smonth" value="11">
+            <label for="month">November</label><br>
+            <input type="radio" name="smonth" value="12">
+            <label for="month">December</label><br>
+        </div>
+        <div>
+            <label>What year?</label>
+            <input type="text" name="syear">
+        </div>
+        <div>
+            <h2>{{ month measurement }}</h2>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
