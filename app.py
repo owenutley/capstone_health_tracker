@@ -47,7 +47,7 @@ def edit_entry():
 
         conn.close()
 
-        return redirect(url_for("entry"))
+        return render_template('_entry.html')
     else:
         return render_template('_entry.html')
 
@@ -72,13 +72,14 @@ def entry():
         month = "Jan"
     return render_template('entry.html', month=month, year=year, this_month=this_month)
 
+
 # def show():
 #     print("month", smonth, "year", syear)
 
 
 @app.route("/summary", methods=["GET", "POST"])
 def summary():
-
+    month_measurement = ''
     if request.method == "POST":
 
         # global smonth, syear
@@ -103,6 +104,7 @@ def summary():
         conn.close()
         return render_template("summary.html", month_measurement=month_measurement)
     else:
+        month_measurement = ''
         return render_template("summary.html")
 
 if __name__ == "__main__":

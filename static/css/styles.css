@@ -169,3 +169,16 @@ textarea{
     width: 80%;
     min-width: 850px;
 }
+
+.summary_chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.summary_chart div {
+    color: white;
+    font-size: 25px;
+    min-width: 150px;
+    border: 2px white solid;
+}

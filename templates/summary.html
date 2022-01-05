@@ -38,10 +38,24 @@
             <label>What year?</label>
             <input type="text" name="syear">
         </div>
-        <div>
-            <h2>{{ month measurement }}</h2>
-        </div>
         <input type="submit" value="Submit">
     </form>
+    <div>
+        <div class="summary_chart">
+            <div>day</div>
+            <div>overall feeling</div>
+            <div>exercise</div>
+            <div>sleep</div>
+        </div>
+        {% for day in month_measurement %}
+        <div class="summary_chart">
+            <div>{{ day[0] }}</div>
+            <div>{{ day[1] }}</div>
+            <div>{{ day[2] }}</div>
+            <div>{{ day[3] }}</div>
+        </div>
+        {% endfor %}
+        <h1>{{ month_measurement }}</h1>
+    </div>
 </div>
 {% endblock %}
