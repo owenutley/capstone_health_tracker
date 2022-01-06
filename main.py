@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for
 # from flask import Flask, flash, redirect, render_template, request, session, abort
 from _postgresql import hostname, database, username, password, port_id
 import psycopg2
-import gunicorn
 
 app = Flask(__name__)
 
@@ -80,9 +79,9 @@ def entry():
 
 @app.route("/summary", methods=["GET", "POST"])
 def summary():
+
     month_measurement = ''
     if request.method == "POST":
-
         # global smonth, syear
         smonth = request.form['smonth']
         syear = request.form['syear']
